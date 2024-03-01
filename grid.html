@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        
+        .container{
+            height: 400px;
+            /* border: 2px solid green; */
+            display: grid;
+            
+            /* grid-template-columns: 200px 200px 200px; */
+            /* justify-content: center; */
+            /* align-content: center; */
+            /* align-items:center ; */
+            grid-template-areas:'hr hr hr hr'
+                                'sbr main main main'
+                                'f f f f'
+                                ;
+        }
+
+        .item{
+            border: 2px solid red;
+            padding: 12px;
+        }
+       
+.item1{
+    grid-area: hr;
+}
+.item2{
+    grid-area: sbr;
+    height: 400px;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: f;
+}
+
+
+
+
+        /* .item1{
+            /* align-self: center; */
+            /* background-color: aqua; */
+            /* justify-self: start; */
+             /* grid-column-start:1 ;
+            grid-column-end: 3;  */
+            /* grid-column: 1/4; */
+            /* grid-row: 1/ span 3; */
+            /* grid-area:1/1/5/3; */
+           
+
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima nam quibusdam excepturi similique incidunt corrupti quam molestias beatae voluptatum, eos magnam suscipit qui, placeat consequuntur laudantium quia vitae perferendis! Qui nihil totam consequuntur unde laboriosam ullam dolorem sint blanditiis. Laboriosam libero ea corrupti nisi?</div>
+        <div class="item item2">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit illum blanditiis porro? Minus harum, illum optio, adipisci, nostrum temporibus necessitatibus autem debitis veritatis a quam nobis! Ullam sint iusto unde qui eligendi itaque quaerat officiis. Eaque tempora sunt perspiciatis sit eius! Animi, sint quo.</div>
+        <div class="item item3">3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi a iste possimus modi asperiores omnis consequuntur libero ex commodi quis eius consequatur dolor ut, quae non labore cupiditate suscipit neque quasi! Alias a eligendi dolores possimus dolore, fuga eos, esse dignissimos quis voluptas repellendus.</div>
+        <div class="item item4">4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta, voluptates quos, quae laudantium molestias quis possimus accusantium, nobis rem delectus! Dicta excepturi eaque consequuntur laboriosam? Consequuntur placeat, at suscipit quaerat magni amet.</div>
+        
+    </div>
+</body>
+</html>

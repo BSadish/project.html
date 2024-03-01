@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    display: grid;
+    grid-template-areas: 'hr hr hr hr'
+                          'side main main main'
+                          'ftr ftr ftr ftr';
+}
+.item{
+    background-color: yellow;
+    border: 2px solid black;
+}
+.item1{
+    grid-area: hr;
+}
+.item2{
+    grid-area: main;
+}
+.item3{
+    grid-area: side;
+}
+.item4{
+    grid-area: ftr;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quam inventore a molestias laborum, modi cupiditate quisquam quia incidunt vel eos architecto similique perspiciatis? Minima aperiam commodi, pariatur quo fugit nihil rerum itaque?</div>
+        <div class="item item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dignissimos neque ab distinctio blanditiis adipisci doloribus natus sit perspiciatis inventore iusto numquam aperiam veniam, repellendus voluptatem odit maxime, ad repudiandae reiciendis molestias a officia voluptas corrupti. Similique quod et eius quas alias quia voluptatibus!</div>
+        <div class="item item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum dolor architecto sit excepturi earum consectetur voluptates consequuntur fuga voluptatem, tempore dolorum, rem soluta cumque id nisi iure magni asperiores et obcaecati atque dolores repellat, fugit deserunt. In tempore qui aliquid, eius perferendis atque!</div>
+
+        <div class="item item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, velit quisquam deleniti vel esse deserunt? At aut velit eligendi, laudantium quaerat voluptas qui fuga cupiditate reiciendis magnam maxime sequi nesciunt ipsa eos. Excepturi recusandae enim consectetur eligendi sit deserunt error aliquam iusto repellat assumenda.</div>
+    </div>
+</body>
+</html>
